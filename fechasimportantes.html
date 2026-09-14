@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title> MES PATRIO | SEPTIEMBRE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        
+        header {
+            background-color: #FAF0E6;
+            padding: 10px 20px; /* Corregido: sin espacio en "10px" */
+            border-bottom: 2px solid #B22222;
+            font-family: "Playfair Display", serif;
+            font-size: 50px;
+            display: flex;
+            align-items: center;
+            color: #006400;
+            gap: 20px;
+        }
+        
+        .contenedor-texto {
+            display: flex;
+            align-items: baseline;
+            gap: 25px;
+        }
+
+        .texto-1 {
+            font-size: 110px;
+            font-weight: bold;
+        }
+
+        .logo {
+            width: 170px;
+            height: auto;
+            margin-right: 20px; 
+        }
+        
+        .buscar-barra {
+            display: flex; 
+            flex-direction: column;
+            gap: 5px;     
+        }   
+        
+        nav {
+            width: 100%;
+            background-color: #FAF0E6;
+            white-space: nowrap;
+            overflow-x: auto;
+            border-bottom: 2px solid #008000;
+        }
+        
+        nav a {
+            display: inline-block;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-family: "Playfair Display", serif; 
+            font-weight: 600;
+            color: #B22222;
+        }
+        
+        main {
+            background-color: #fffafa;
+            padding: 20px 80px; /* Agregamos el margen general aquí para el contenido */
+            flex: 1; 
+        }
+        
+        footer {
+            background-color: #BDC8B8;
+            color: #4A2E2B;
+            padding: 25px;
+            text-align: center;
+            border-top: 2px solid #008000;
+            font-family: "Playfair Display", serif; 
+            font-weight: 600;
+        }
+        
+        h1 {
+            color: #800000;
+            text-align: center;
+            font-family: "Playfair Display", serif; 
+            font-weight: 900;
+            font-size: 45px;
+        }
+        
+        /* SECCIÓN DE FECHAS (TARJETAS) */
+        .tarjeta-fecha {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            margin-bottom: 30px;
+            padding-bottom: 25px;
+            border-bottom: 2px solid #800000;
+        }
+
+        .contenido-texto {
+            flex: 1;
+        }
+
+        .contenido-texto h2 {
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 12px;
+
+            color: #006400;
+            text-align: left;
+            font-family: "Playfair Display", serif; 
+            font-size: 37px;
+        }
+
+        .contenido-texto p {
+            font-family: sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #3E2723;
+            text-align: justify;
+            margin: 0; /* Se reinician márgenes para alinearse bien con la imagen */
+        }
+
+        .imagen-fecha {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+        }
+</style>
+</head>
+<body>
+
+    <header>
+        <img src="encabezado.png" alt="Logo" class="logo">
+        <div class="contenedor-texto">
+        <span class="texto-1">FECHAS IMPORTANTES</span>
+    </div>
+    </header>
+    <div class="buscar-barra">
+        <!-- MENÚ CON BARRA DE DESPLAZAMIENTO HORIZONTAL -->
+        <nav>
+            <a href="index.html">ºInicio</a>
+            <a href="personajesilustres.html">ºPersonajes Ilustres</a>
+            <a href="datoscuriosos.html">ºDatos Curiosos Y Mitos</a>
+        </nav>
+
+        <main>
+    <h1>Fechas Importantes...</h1>
+    
+    <article class="tarjeta-fecha">
+        <div class="contenido-texto">
+            <h2>13 de Septiembre – Gesta Heroica de los Niños Héroes de Chapultepec (1847)</h2>
+            <p>Esta fecha conmemora uno de los episodios más emotivos y significativos de la historia nacional: la defensa del Castillo de Chapultepec en 1847 durante la
+            intervención estadounidense. Ante la inminente toma del recinto, los cadetes del Heroico Colegio Militar —Juan de la Barrera, Agustín Melgar, Francisco
+            Márquez, Fernando Montes de Oca, Vicente Suárez y Juan Escutia— decidieron resistir y proteger la bandera nacional con su propia vida. Más allá de los
+            debates historiográficos sobre sus detalles, esta gesta simboliza el patriotismo, la valentía y el compromiso irrestricto de la juventud mexicana con la
+            soberanía del país frente a las agresiones extranjeras.</p>
+        </div>
+        <img src="13.webp" alt="Niños Heroes" class="imagen-fecha">
+    </article>
+    <article class="tarjeta-fecha">
+        <div class="contenido-texto">
+            <h2>15 de Septiembre (Noche) – El Grito de Dolores</h2>
+            <p>Cada noche del 15 de septiembre, las plazas públicas de todo México y sus embajadas en el mundo se visten de fiesta para conmemorar el llamado inicial a la
+            Independencia. La tradición popular rememora la víspera del levantamiento armado cuando el cura Miguel Hidalgo y Costilla convocó al pueblo reunido en
+            Dolores. Con el repique de las campanas y el izamiento de la bandera, autoridades y ciudadanos reafirman el orgullo de ser mexicanos, rindiendo homenaje
+            a la memoria de las mujeres y hombres que sacrificaron sus vidas por legarnos una patria libre, justa y soberana.</p>
+        </div>
+        <img src="15.jpg" alt="Grito de Dolores" class="imagen-fecha">
+    </article>
+    <article class="tarjeta-fecha">
+        <div class="contenido-texto">
+            <h2>16 de Septiembre – Inicio de la Independencia de México (1810)</h2>
+            <p>La madrugada del 16 de septiembre de 1810 marca el comienzo oficial del movimiento insurgente contra el dominio español. Desde el atrio de la parroquia
+            de Dolores, Guanajuato, Miguel Hidalgo y Costilla incitó a campesinos, indígenas y mestizos a rebelarse contra el mal gobierno y la opresión colonial. Este
+            acontecimiento encendió una lucha social y política sin precedentes que duraría más de una década, transformando radicalmente la estructura de la Nueva
+            España y marcando el nacimiento de la identidad nacional mexicana.</p>
+        </div>
+        <img src="16.jpg" alt="Independencia" class="imagen-fecha">
+    </article>
+    <article class="tarjeta-fecha">
+        <div class="contenido-texto">
+            <h2>27 de Septiembre – Consumación de la Independencia (1821)</h2>
+            <p>El 27 de septiembre de 1821 concluyó un prolongado conflicto de 11 años gracias a la alianza pactada en el Plan de Iguala entre las fuerzas insurgentes de
+            Vicente Guerrero y las tropas realistas al mando de Agustín de Iturbide. Con la entrada triunfal del Ejército Trigarante a la Ciudad de México, entre
+            aclamaciones populares y arcos triunfales, se materializó la unión de las distintas facciones bajo las tres garantías de religión, unión e independencia,
+            poniendo fin a tres siglos de dominio de la Corona española sobre el territorio mexicano.</p>
+        </div>
+        <img src="27.jpg" alt="Consumación" class="imagen-fecha">
+    </article>
+    <article class="tarjeta-fecha">
+        <div class="contenido-texto">
+            <h2>28 de Septiembre – Firma del Acta de Independencia</h2>
+            <p>Apenas un día después de la entrada del Ejército Trigarante a la capital, se reunió la Junta Provisional Gubernativa para redactar y firmar el Acta de
+            Independencia del Imperio Mexicano. Este documento jurídico fundamental proclamó formalmente ante el mundo la existencia de México como un Estado
+            soberano, constituido e independiente de España. La firma del acta representó el primer paso hacia la organización institucional de la nueva nación, abriendo
+            el camino para la redacción de sus futuras leyes e instituciones republicanas.</p>
+        </div>
+        <img src="28.jpg" alt="Acta de Independencia" class="imagen-fecha">
+    </article>
+    <article class="tarjeta-fecha">
+        <div class="contenido-texto">
+            <h2>30 de Septiembre – Natalicio de José María Morelos y Pavón</h2>
+            <p>El 30 de septiembre de 1765 nació en Valladolid (actual Morelia) José María Morelos y Pavón, una de las figuras más brillantes de la contienda insurgente.
+            Conocido como "El Siervo de la Nación", Morelos asumió la dirección del movimiento tras la muerte de Hidalgo, destacando no solo por su genialidad
+            militar en la organización de campañas estratégicas, sino también por su pensamiento político. Su mayor legado trasciende las armas a través del documento
+            Sentimientos de la Nación, sentando los principios de la abolición de la esclavitud, la igualdad social y la soberanía popular en México.</p>
+        </div>
+        <img src="30.jpeg" alt="Nataicio José" class="imagen-fecha">
+    </article>
+</main>
+    </div>
+
+    <footer>
+        <p>Nombre: Ortiz Lugo Aime Alexandra | No. Control: 24308051280608</p>
+        <p>Semestre: 4to | Grupo: I | Especialidad: Programación</p>
+    </footer>
+
+</body>
+</html>

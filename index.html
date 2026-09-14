@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title> MES PATRIO | SEPTIEMBRE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        header {
+            background-color: #FAF0E6;
+            padding: 10 px 20px;
+            border-bottom: 2px solid #B22222;
+            font-family: "Playfair Display", sans-serif;
+            font-size: 50px;
+
+            display: flex;
+            align-items: center;
+            color:#006400;
+            gap:20px;
+        }
+        .contenedor-texto {
+            display: flex;
+            align-items: baseline; /* Pisa las letras sobre la misma línea base horizontal */
+            gap: 25px;            /* Espacio exacto entre ambos textos */
+
+        }
+
+        .texto-1 {
+            font-size: 110px;
+            font-weight: bold;
+        }
+
+        .texto-2 {
+            font-size: 40px;      /* Puedes cambiar este tamaño */
+
+        }
+
+        .logo {
+            width: 170px;
+            height: auto;
+            margin-right: 20px; 
+        }
+        .buscar-barra {
+            display: flex; 
+            flex-direction: column; /* Cambiado a columna para mantener el layout */
+            gap: 5px;     
+        }   
+        /* SECCIÓN MODIFICADA PARA EL DESPLAZAMIENTO HORIZONTAL */
+        nav {
+            width: 100%;                  /* Ocupa todo el ancho */
+            background-color: #FAF0E6;
+            white-space: nowrap;          /* Mantiene los elementos en una sola línea */
+            overflow-x: auto;             /* Activa la barra de desplazamiento horizontal */
+            border-bottom: 2px solid #008000;
+        }
+        nav a {
+            display: inline-block;        /* Pone las opciones una al lado de la otra */
+            padding: 15px 30px;           /* Se ajusta el espacio para que desborde y aparezca el scroll */
+            text-decoration: none;
+            font-family: "Playfair Display", sans-serif; 
+            font-weight: 600;
+            color:#B22222;
+        }
+        main {
+            background-color:#fffafa;
+            padding: 20px;
+            flex: 1; 
+        }
+        footer {
+            background-color: #BDC8B8 ;
+            color: #3E2723;
+            padding: 20px;
+            text-align: center;
+            border-top: 2px solid #008000;
+            font-family: "Playfair Display", sans-serif; 
+            font-weight: 600;
+        }
+        h1 {
+            color: #800000;
+            text-align: left;
+            font-family: "Playfair Display", serif; 
+            font-weight: 900;
+            font-size: 55px;
+        }
+        /* Contenedor que pone el texto y la imagen lado a lado */
+        .seccion-intro {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            gap: 20px;                /* Distancia entre el párrafo y la imagen */
+            margin-bottom: 40px;
+        }
+
+        /* El texto toma el espacio disponible a la izquierda */
+        .seccion-intro p {
+            flex: 1;
+            text-align: left;
+            font-family: "Playfair Display", serif;
+            color: #3E2723;
+            font-size: 25px;
+            line-height: 1.6;
+            margin: 0;
+            align-self: flex-start;
+        }
+
+        /* La imagen fija a la derecha */
+        .imagen-intro {
+            width: 700px;             /* Ancho de la imagen en la esquina */
+            height: 400px;            /* Altura fija */
+            object-fit: cover;        /* Mantiene la proporción de la foto sin deformarla */
+            flex-shrink: 0;           /* Evita que la imagen se reduzca si el texto es largo */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="encabezado.png" alt="Logo" class="logo">
+        <div class="contenedor-texto">
+        <span class="texto-1">SEPTIEMBRE</span>
+        <span class="texto-2">MES PATRIO</span>
+    </div>
+    </header>
+    <div class="buscar-barra">
+        <!-- MENÚ CON BARRA DE DESPLAZAMIENTO HORIZONTAL -->
+        <nav>
+            <a href="fechasimportantes.html">ºFechas Importantes</a>
+            <a href="personajesilustres.html">ºPersonajes Ilustres</a>
+            <a href="datoscuriosos.html">ºDatos Curiosos Y Mitos</a>
+        </nav>
+
+        <main>
+            <h1>Historia, orgullo y memoria de la<br>Independencia de México.</h1>
+
+        <div class="seccion-intro">
+            <p>En México, septiembre es reconocido como el Mes Patrio debido a que en este período se concentran los acontecimientos históricos fundamentales para la creación del Estado mexicano. <br>Todo comenzó la madrugada del 16 de septiembre de 1810 con el llamado del cura Miguel Hidalgo y Costilla a levantarse en armas. Tras 11 años de intensa lucha, el proceso culminó el 27 de septiembre de 1821 con la entrada del Ejército Trigarante a la Ciudad de México y la posterior firma del Acta de Independencia el 28 de septiembre. Durante este mes también se rinde honor a la defensa de la soberanía nacional el 13 de septiembre (Niños Héroes) y al natalicio de una de las mentes militares más brillantes de la contienda, José María Morelos, el 30 de septiembre.</p>
+            
+            <img src="banner.jpg" alt="Fiestas Patrias" class="imagen-intro">
+        </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>Nombre: Ortiz Lugo Aime Alexandra | No. Control: 24308051280608</p>
+        <p>Semestre: 4to | Grupo: I | Especialidad: Programación</p>
+    </footer>
+
+</body>
+</html>

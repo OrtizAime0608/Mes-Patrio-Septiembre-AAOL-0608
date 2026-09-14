@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title> MES PATRIO | SEPTIEMBRE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        
+        header {
+            background-color: #FAF0E6;
+            padding: 10px 20px; /* Corregido: sin espacio en "10px" */
+            border-bottom: 2px solid #B22222;
+            font-family: "Playfair Display", serif;
+            font-size: 50px;
+            display: flex;
+            align-items: center;
+            color: #006400;
+            gap: 20px;
+        }
+        
+        .contenedor-texto {
+            display: flex;
+            align-items: baseline;
+            gap: 25px;
+        }
+
+        .texto-1 {
+            font-size: 110px;
+            font-weight: bold;
+        }
+
+        .logo {
+            width: 170px;
+            height: auto;
+            margin-right: 20px; 
+        }
+        
+        .buscar-barra {
+            display: flex; 
+            flex-direction: column;
+            gap: 5px;     
+        }   
+        
+        nav {
+            width: 100%;
+            background-color: #FAF0E6;
+            white-space: nowrap;
+            overflow-x: auto;
+            border-bottom: 2px solid #008000;
+        }
+        
+        nav a {
+            display: inline-block;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-family: "Playfair Display", serif; 
+            font-weight: 600;
+            color: #B22222;
+        }
+        
+        main {
+            background-color: #fffafa;
+            padding: 20px 80px; /* Agregamos el margen general aquí para el contenido */
+            flex: 1; 
+        }
+        
+        footer {
+            background-color: #BDC8B8;
+            color: #4A2E2B;
+            padding: 25px;
+            text-align: center;
+            border-top: 2px solid #008000;
+            font-family: "Playfair Display", serif; 
+            font-weight: 600;
+        }
+        
+        h1 {
+            color: #800000;
+            text-align: center;
+            font-family: "Playfair Display", serif; 
+            font-weight: 900;
+            font-size: 45px;
+        }
+        
+        /* SECCIÓN DE FECHAS (TARJETAS) */
+        .tarjeta-fecha {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 30px;
+            margin-bottom: 30px;
+            padding-bottom: 25px;
+            padding: 35px 0;
+            border-bottom: 2px solid #006400;
+        }
+
+        .contenido-texto {
+            flex: 1;
+        }
+
+        .contenido-texto h2 {
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 12px;
+
+            color: #800000;
+            text-align: left;
+            font-family: "Playfair Display", serif; 
+            font-size: 45px;
+        }
+
+        .contenido-texto p {
+            font-family: sans-serif;
+            font-size: 25px;
+            line-height: 1.6;
+            color: #3E2723;
+            text-align: left;
+            margin: 0; /* Se reinician márgenes para alinearse bien con la imagen */
+        }
+
+        .imagen-fecha {
+            width: 350px;
+            height: 350px;
+            object-fit: cover;
+        }
+</style>
+</head>
+<body>
+
+    <header>
+        <img src="encabezado.png" alt="Logo" class="logo">
+        <div class="contenedor-texto">
+        <span class="texto-1">DATOS CURIOSOS Y MITOS</span>
+    </div>
+    </header>
+    <div class="buscar-barra">
+        <!-- MENÚ CON BARRA DE DESPLAZAMIENTO HORIZONTAL -->
+        <nav>
+            <a href="index.html">ºInicio</a>
+            <a href="fechasimportantes.html">ºFechas Importantes</a>
+            <a href="personajesilustres.html">ºPersonajes Ilustres</a>
+        </nav>
+
+        <main>
+    
+    <article class="tarjeta-fecha">
+        <img src="mito1.jpg" alt="Mito 1" class="imagen-fecha">
+        <div class="contenido-texto">
+            <h2>1. Mito: El Grito de Dolores no ocurrió la <br> noche del 15 de septiembre</h2>
+            <p>Existe la creencia popularizada de que el cura Miguel Hidalgo y Costilla dio el Grito de
+            Dolores durante la noche del 15 de septiembre. Sin embargo, la evidencia historiográfica
+            demuestra que el llamado a las armas ocurrió en la madrugada del 16 de septiembre de 1810,
+            aproximadamente a las 5:00 a.m., cuando Hidalgo mandó tocar las campanas de la parroquia
+            de Dolores para convocar a los feligreses a la misa dominical y, posteriormente, incitarlos a
+            rebelarse. La costumbre de conmemorar el Grito desde la noche del 15 comenzó a gestarse a
+            mediados del siglo XIX con celebraciones cívicas y serpentinas, pero se consolidó como
+            protocolo oficial durante la dictadura de Porfirio Díaz, quien adaptó la fiesta pública nocturna
+            para hacerla coincidir de manera estratégica con el festejo de su propio cumpleaños.</p>
+        </div>
+    </article>
+    <article class="tarjeta-fecha">
+        <img src="mito2.jfif" alt="Mito 2" class="imagen-fecha">
+        <div class="contenido-texto">
+            <h2>2. Mito: El heroico salto al vacío de Juan
+            Escutia en la batalla de Chapultepec</h2>
+            <p>Una de las narrativas más difundidas dentro de la educación básica mexicana relata cómo el
+            cadete Juan Escutia, al ver la inminente caída del Castillo de Chapultepec el 13 de septiembre
+            de 1847 frente a las tropas invasoras estadounidenses, envolvió su cuerpo en la bandera
+            nacional y se arrojó al vacío desde el torreón para evitar que el símbolo patrio fuera
+            profanado por el enemigo. No obstante, numerosos historiadores e investigaciones
+            académicas han señalado que esta versión es un mito heroico construido hacia finales del siglo
+            XIX para fortalecer la identidad nacional y la cohesión cívica tras una dura derrota militar. Si
+            bien la heroica resistencia defensiva de los jóvenes cadetes del Colegio Militar fue un hecho
+            histórico completamente real, no existen pruebas ni partes de guerra de la época que
+            confirmen el salto de Escutia con la bandera.</p>
+        </div>
+    </article>
+    <article class="tarjeta-fecha">
+        <img src="mito3.jfif" alt="Ignacio Allende y Unzaga" class="imagen-fecha">
+        <div class="contenido-texto">
+            <h2>3. Dato Curioso: El estandarte guadalupano
+            como el primer símbolo de identidad</h2>
+            <p>A diferencia de la bandera tricolor con el águila y la serpiente que conocemos en la actualidad,
+            el primer símbolo oficial bajo el cual marchó el ejército insurgente no fue un diseño
+            institucional ni republicano, sino un estandarte religioso. Durante los primeros momentos del
+            levantamiento en septiembre de 1810, al pasar por el santuario de Atotonilco en Guanajuato,
+            Miguel Hidalgo tomó un lienzo que representaba a la Virgen de Guadalupe, lo ató a una lanza
+            y lo erigió como la enseña de su tropa. Esta imagen sagrada funcionó como un poderoso
+            elemento de cohesión social e identidad popular, permitiendo unificar a miles de campesinos,
+            indígenas y mestizos analfabetos bajo una misma causa común frente a las autoridades
+            virreinales.</p>
+        </div>
+    </article><article class="tarjeta-fecha">
+        <img src="mito4.jfif" alt="Vicente Guerrero" class="imagen-fecha">
+        <div class="contenido-texto">
+            <h2>4. Dato Curioso: La leyenda gastronómica
+            y el origen de los Chiles en Nogada</h2>
+            <p>La riqueza gastronómica asociada a las fiestas de septiembre guarda una estrecha relación con
+            los acontecimientos políticos de la consumación de la Independencia en 1821. De acuerdo con
+            la tradición culinaria y las crónicas poblanas, las monjas agustinas del convento de Santa
+            Mónica en Puebla crearon la receta de los chiles en nogada para agasajar a Agustín de Iturbide
+            cuando este transitaba por la ciudad tras la firma de los Tratados de Córdoba. Con el
+            propósito de homenajear al nuevo régimen y al Ejército Trigarante, las religiosas diseñaron un
+            platillo de temporada utilizando ingredientes locales que recrearan fielmente los colores de la
+            nueva bandera: el verde del chile poblano bañado en perejil, el blanco de la crema a base de
+            nuez de Castilla y el rojo brillante de las semillas de granada.</p>
+        </div>
+</main>
+    </div>
+
+    <footer>
+        <p>Nombre: Ortiz Lugo Aime Alexandra | No. Control: 24308051280608</p>
+        <p>Semestre: 4to | Grupo: I | Especialidad: Programación</p>
+    </footer>
+
+</body>
+</html>

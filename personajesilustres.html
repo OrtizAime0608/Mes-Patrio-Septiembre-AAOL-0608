@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title> MES PATRIO | SEPTIEMBRE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        
+        header {
+            background-color: #FAF0E6;
+            padding: 10px 20px; /* Corregido: sin espacio en "10px" */
+            border-bottom: 2px solid #B22222;
+            font-family: "Playfair Display", serif;
+            font-size: 50px;
+            display: flex;
+            align-items: center;
+            color: #006400;
+            gap: 20px;
+        }
+        
+        .contenedor-texto {
+            display: flex;
+            align-items: baseline;
+            gap: 25px;
+        }
+
+        .texto-1 {
+            font-size: 110px;
+            font-weight: bold;
+        }
+
+        .logo {
+            width: 170px;
+            height: auto;
+            margin-right: 20px; 
+        }
+        
+        .buscar-barra {
+            display: flex; 
+            flex-direction: column;
+            gap: 5px;     
+        }   
+        
+        nav {
+            width: 100%;
+            background-color: #FAF0E6;
+            white-space: nowrap;
+            overflow-x: auto;
+            border-bottom: 2px solid #008000;
+        }
+        
+        nav a {
+            display: inline-block;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-family: "Playfair Display", serif; 
+            font-weight: 600;
+            color: #B22222;
+        }
+        
+        main {
+            background-color: #fffafa;
+            padding: 20px 80px; /* Agregamos el margen general aquí para el contenido */
+            flex: 1; 
+        }
+        
+        footer {
+            background-color: #BDC8B8;
+            color: #4A2E2B;
+            padding: 25px;
+            text-align: center;
+            border-top: 2px solid #008000;
+            font-family: "Playfair Display", serif; 
+            font-weight: 600;
+        }
+        
+        h1 {
+            color: #800000;
+            text-align: center;
+            font-family: "Playfair Display", serif; 
+            font-weight: 900;
+            font-size: 45px;
+        }
+        
+        /* SECCIÓN DE FECHAS (TARJETAS) */
+        .tarjeta-fecha {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 40px;
+            margin-bottom: 30px;
+            padding-bottom: 25px;
+            border-bottom: 2px solid #800000;
+        }
+
+        .contenido-texto {
+            flex: 1;
+        }
+
+        .contenido-texto h2 {
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 12px;
+
+            color: #006400;
+            text-align: left;
+            font-family: "Playfair Display", serif; 
+            font-size: 37px;
+        }
+
+        .contenido-texto p {
+            font-family: sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #3E2723;
+            text-align: left;
+            margin: 0; /* Se reinician márgenes para alinearse bien con la imagen */
+        }
+
+        .imagen-fecha {
+            width: 350px;
+            height: 350px;
+            object-fit: cover;
+        }
+</style>
+</head>
+<body>
+
+    <header>
+        <img src="encabezado.png" alt="Logo" class="logo">
+        <div class="contenedor-texto">
+        <span class="texto-1">PERSONAJES ILUSTRES</span>
+    </div>
+    </header>
+    <div class="buscar-barra">
+        <!-- MENÚ CON BARRA DE DESPLAZAMIENTO HORIZONTAL -->
+        <nav>
+            <a href="index.html">ºInicio</a>
+            <a href="fechasimportantes.html">ºFechas Importantes</a>
+            <a href="datoscuriosos.html">ºDatos Curiosos Y MItos</a>
+        </nav>
+
+        <main>
+    
+    <article class="tarjeta-fecha">
+        <img src="miguel.jpg" alt="Miguel Hidalgo" class="imagen-fecha">
+        <div class="contenido-texto">
+            <h2>Miguel Hidalgo y Costilla</h2>
+            <p>Conocido como el "Padre de la Patria", fue un sacerdote erudito e influyente que marcó el inicio de la gesta independentista con el histórico Grito de Dolores
+            la madrugada del 16 de septiembre de 1810. Además de convocar al pueblo a levantarse en armas contra el régimen colonial, promulgó en Guadalajara el
+            decreto para la abolición de la esclavitud en México. Aunque su liderazgo militar fue breve debido a su captura y ejecución en 1811, su valentía y visión de
+            justicia social sentaron las bases ideológicas y el impulso inicial del movimiento insurgente.</p>
+        </div>
+    </article>
+    <article class="tarjeta-fecha">
+        <img src="jose.jfif" alt="José María y Morelos" class="imagen-fecha">
+        <div class="contenido-texto">
+            <h2>José María Morelos y Pavón</h2>
+            <p>Sacerdote y brillante estratega militar, Morelos asumió el liderazgo de la lucha insurgente tras la muerte de Hidalgo, logrando dominar gran parte del sur del
+            país. Apodado "El Siervo de la Nación", no solo destacó por sus hazañas en el campo de batalla, sino por su visión política al convocar el Congreso de
+            Anáhuac. Fue el autor de los Sentimientos de la Nación, un documento histórico de vital trascendencia que sentó las bases para la abolición de la esclavitud, la
+            división de poderes y la igualdad entre todos los ciudadanos mexicanos.</p>
+        </div>
+    </article>
+    <article class="tarjeta-fecha">
+        <img src="josefa.jpg" alt="Josefa Ortiz de Domínguez" class="imagen-fecha">
+        <div class="contenido-texto">
+            <h2>Josefa Ortiz de Domínguez</h2>
+            <p>Conocida popularmente como "La Corregidora", desempeñó un papel determinante en la fase organizativa del movimiento independentista. Desde su
+            posición en Querétaro, participó activamente en las conspiraciones secretas que buscaban la libertad de la nación. Al ser descubiertos los planes por las
+            autoridades virreinales en septiembre de 1810, logró enviar un aviso oportuno a Ignacio Allende y Miguel Hidalgo, permitiendo que el levantamiento armado
+            se adelantara e iniciara con éxito en lugar de ser desarticulado antes de empezar.</p>
+        </div>
+    </article>
+    <article class="tarjeta-fecha">
+        <img src="ignacio.jfif" alt="Ignacio Allende y Unzaga" class="imagen-fecha">
+        <div class="contenido-texto">
+            <h2>Ignacio Allende y Unzaga</h2>
+            <p>Capitán del ejército realista que abrazó la causa insurgente, Allende fue una de las mentes militares más importantes en la organización inicial de la Guerra
+            de Independencia. Su formación en las milicias le permitió aportar disciplina, táctica y estructura bélica a las miles de personas que se sumaron al llamado
+            libertador. Trabajo codo a codo con Miguel Hidalgo durante los primeros meses del conflicto, destacando por su firme convicción de establecer un gobierno
+            autónomo que respondiera a los intereses y necesidades del pueblo mexicano.</p>
+        </div>
+    </article><article class="tarjeta-fecha">
+        <img src="vicente.jpg" alt="Vicente Guerrero" class="imagen-fecha">
+        <div class="contenido-texto">
+            <h2>Vicente Guerrero</h2>
+            <p>Líder e ícono de la resistencia insurgente durante la etapa más difícil del conflicto, Guerrero mantuvo viva la llama de la lucha armada en las montañas del
+            sur cuando el movimiento parecía derrotado. Su célebre frase "La patria es primero" refleja su inquebrantable lealtad ante los ofrecimientos de indulto del
+            gobierno virreinal. Su pragmatismo y visión política le permitieron pactar el histórico "Abrazo de Acatempan" con Agustín de Iturbide, logrando la unión de
+            fuerzas que condujo a la consumación definitiva de la Independencia en 1821.</p>
+        </div>
+    </article><article class="tarjeta-fecha">
+        <img src="leona.jfif" alt="Leona Vicario" class="imagen-fecha">
+        <div class="contenido-texto">
+            <h2>Leona Vicario</h2>
+            <p>Una de las primeras mujeres periodistas de México y figura clave del periodismo clandestino durante la lucha armada. Perteneciente a una familia de alto
+            nivel social, Leona Vicario financió con sus propios bienes la compra de armas y medicinas para las tropas insurgentes, además de actuar como informante
+            secreta transmitiendo mensajes cifrados sobre los movimientos del ejército realista. Su incansable labor periodística y compromiso político le valieron ser
+            reconocida como Benemérita Madre de la Patria por sus valiosos aportes a la libertad nacional.</p>
+        </div>
+    </article>
+</main>
+    </div>
+
+    <footer>
+        <p>Nombre: Ortiz Lugo Aime Alexandra | No. Control: 24308051280608</p>
+        <p>Semestre: 4to | Grupo: I | Especialidad: Programación</p>
+    </footer>
+
+</body>
+</html>

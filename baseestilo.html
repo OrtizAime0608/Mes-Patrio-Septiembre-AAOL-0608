@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title> MES PATRIO | SEPTIEMBRE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        header {
+            background-color: #FAF0E6;
+            padding: 10 px 20px;
+            border-bottom: 2px solid #B22222;
+            font-family: "Playfair Display", sans-serif;
+            font-size: 50px;
+
+            display: flex;
+            align-items: center;
+            color:#006400;
+            gap:20px;
+        }
+        .contenedor-texto {
+            display: flex;
+            align-items: baseline; /* Pisa las letras sobre la misma línea base horizontal */
+            gap: 25px;            /* Espacio exacto entre ambos textos */
+
+        }
+
+        .texto-1 {
+            font-size: 110px;
+            font-weight: bold;
+        }
+
+        .texto-2 {
+            font-size: 40px;      /* Puedes cambiar este tamaño */
+
+        }
+
+        .logo {
+            width: 170px;
+            height: auto;
+            margin-right: 20px; 
+        }
+        .buscar-barra {
+            display: flex; 
+            flex-direction: column; /* Cambiado a columna para mantener el layout */
+            gap: 5px;     
+        }   
+        /* SECCIÓN MODIFICADA PARA EL DESPLAZAMIENTO HORIZONTAL */
+        nav {
+            width: 100%;                  /* Ocupa todo el ancho */
+            background-color: #FAF0E6;
+            white-space: nowrap;          /* Mantiene los elementos en una sola línea */
+            overflow-x: auto;             /* Activa la barra de desplazamiento horizontal */
+            border-bottom: 2px solid #008000;
+        }
+        nav a {
+            display: inline-block;        /* Pone las opciones una al lado de la otra */
+            padding: 15px 30px;           /* Se ajusta el espacio para que desborde y aparezca el scroll */
+            text-decoration: none;
+            font-family: "Playfair Display", sans-serif; 
+            font-weight: 600;
+            color:#B22222;
+        }
+        main {
+            background-color:#fffafa;
+            padding: 20px;
+            flex: 1; 
+        }
+        footer {
+            background-color: #BDC8B8 ;
+            color: #4A2E2B;
+            padding: 25px;
+            text-align: center;
+            border-top: 2px solid #008000;
+            font-family: "Playfair Display", sans-serif; 
+            font-weight: 600;
+        }
+        h1{
+            color:#;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="encabezado.png" alt="Logo" class="logo">
+        <div class="contenedor-texto">
+        <span class="texto-1">SEPTIEMBRE</span>
+        <span class="texto-2">MES PATRIO</span>
+    </div>
+    </header>
+    <div class="buscar-barra">
+        <!-- MENÚ CON BARRA DE DESPLAZAMIENTO HORIZONTAL -->
+        <nav>
+            <a href="fechasimportantes.html">ºFechas Importantes</a>
+            <a href="personajesilustres.html">ºPersonajes Ilustres</a>
+            <a href="datoscuriosos.html">ºDatos Curiosos Y MItos</a>
+        </nav>
+
+        <main>
+            <h1></h1>
+            <p> </p>
+            <img src="" alt="" style="display:block;margin:auto;" width="400" height="500">
+        </main>
+    </div>
+
+    <footer>
+        <p>Nombre: Ortiz Lugo Aime Alexandra | No. Control: 24308051280608</p>
+        <p>Semestre: 4to | Grupo: I | Especialidad: Programación</p>
+    </footer>
+
+</body>
+</html>
