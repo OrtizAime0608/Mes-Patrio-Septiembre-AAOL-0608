@@ -1,73 +1,97 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Le dice al navegador que la página es HTML5 -->
     <meta charset="UTF-8">
+    <!-- Permite que se vean bien los acentos, la 'ñ' y símbolos sin que se rompa el texto -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> MES PATRIO | SEPTIEMBRE</title>
+    <!-- Trae la fuente bonita "Playfair Display" desde Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <!-- Todo el estilo y diseño CSS de la página va aquí adentro -->
     <style>
+        /* Quita los márgenes feos por defecto y le pone la letra Arial a todo el cuerpo */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
         }
         
+        /* Acomoda el encabezado verde superior con su color beige de fondo */
         header {
             background-color: #FAF0E6;
             padding: 10px 20px; /* Corregido: sin espacio en "10px" */
             border-bottom: 2px solid #B22222;
             font-family: "Playfair Display", serif;
             font-size: 50px;
+            /* Flexbox: junta y acomoda los elementos de adentro en una sola fila */
             display: flex;
+            /* Centra verticalmente la imagen del logo y el texto */
             align-items: center;
             color: #006400;
+            /* Separa el logo del texto por 20px */
             gap: 20px;
         }
         
+        /* Alinea el texto gigante del título del encabezado */
         .contenedor-texto {
             display: flex;
+            /* Alinea las letras para que queden parejitas sobre la misma línea */
             align-items: baseline;
             gap: 25px;
         }
 
+        /* Le da el tamaño gigante y las letras negritas al título principal */
         .texto-1 {
             font-size: 110px;
             font-weight: bold;
         }
 
+        /* Ajusta el ancho de la imagen del logo */
         .logo {
             width: 170px;
             height: auto;
             margin-right: 20px; 
         }
         
+        /* Junta la barra de menú con el contenido y los pone uno arriba del otro */
         .buscar-barra {
             display: flex; 
+            /* Acomoda las cosas en forma de columna (de arriba hacia abajo) */
             flex-direction: column;
             gap: 5px;     
         }   
         
+        /* Acomoda la barra de navegación donde están las pestañas */
         nav {
             width: 100%;
             background-color: #FAF0E6;
+            /* Evita que los botones del menú se bajen si la pantalla es chiquita */
             white-space: nowrap;
+            /* Si no caben las pestañas, pone una barrita para deslizar a los lados */
             overflow-x: auto;
             border-bottom: 2px solid #008000;
         }
         
+        /* Le da forma, espacio y color rojo a las letras del menú */
         nav a {
             display: inline-block;
             padding: 15px 30px;
-            text-decoration: none;
+            text-decoration: none; /* Quita la raya fea de abajo de los links */
             font-family: "Playfair Display", serif; 
             font-weight: 600;
             color: #B22222;
         }
         
+        /* Pone el fondo blanquecino y el espacio a los lados del contenido principal */
         main {
             background-color: #fffafa;
             padding: 20px 80px; /* Agregamos el margen general aquí para el contenido */
+            /* Estira este bloque hacia abajo para que llene todo el espacio libre */
             flex: 1; 
         }
         
+        /* Le pone diseño al pie de página (el cuadrito verde claro de hasta abajo) */
         footer {
             background-color: #BDC8B8;
             color: #4A2E2B;
@@ -78,6 +102,7 @@
             font-weight: 600;
         }
         
+        /* Pone estilo a los h1 centrándolos y poniéndolos en color guinda */
         h1 {
             color: #800000;
             text-align: center;
@@ -87,9 +112,11 @@
         }
         
         /* SECCIÓN DE FECHAS (TARJETAS) */
+        /* Acomoda cada personaje en su tarjeta alineando la foto y el texto con un espacio de 40px */
         .tarjeta-fecha {
             display: flex;
             align-items: center;
+            /* Alinea todo el contenido empezando desde la izquierda */
             justify-content: flex-start;
             gap: 40px;
             margin-bottom: 30px;
@@ -97,10 +124,12 @@
             border-bottom: 2px solid #800000;
         }
 
+        /* Le da espacio al bloque de texto dentro de la tarjeta para que se expanda bien */
         .contenido-texto {
             flex: 1;
         }
 
+        /* Pone estilo a los títulos h2 con el nombre de cada personaje patrio */
         .contenido-texto h2 {
             font-weight: bold;
             margin-top: 0;
@@ -112,40 +141,50 @@
             font-size: 37px;
         }
 
+        /* Pone estilo a los párrafos de las biografías */
         .contenido-texto p {
             font-family: sans-serif;
             font-size: 16px;
+            /* Separa los renglones un poquito para que sea cómodo de leer */
             line-height: 1.6;
             color: #3E2723;
             text-align: left;
             margin: 0; /* Se reinician márgenes para alinearse bien con la imagen */
         }
 
+        /* Ajusta el tamaño de los retratos cuadrangulares de los personajes */
         .imagen-fecha {
             width: 350px;
             height: 350px;
+            /* Recorta la foto bonito para que llene el cuadro sin estirarse ni aplastarse */
             object-fit: cover;
         }
 </style>
 </head>
 <body>
 
+    <!-- Encabezado superior con la foto del logo y el título de Personajes Ilustres -->
     <header>
         <img src="encabezado.png" alt="Logo" class="logo">
         <div class="contenedor-texto">
         <span class="texto-1">PERSONAJES ILUSTRES</span>
     </div>
     </header>
+    
+    <!-- Bloque contenedor para la navegación y el contenido -->
     <div class="buscar-barra">
         <!-- MENÚ CON BARRA DE DESPLAZAMIENTO HORIZONTAL -->
+        <!-- Menú de navegación con links a las otras páginas del sitio web -->
         <nav>
             <a href="index.html">ºInicio</a>
             <a href="fechasimportantes.html">ºFechas Importantes</a>
             <a href="datoscuriosos.html">ºDatos Curiosos Y MItos</a>
         </nav>
 
+        <!-- Bloque contenedor principal donde van todos los artículos de los personajes -->
         <main>
     
+    <!-- Primera tarjeta con la información de Miguel Hidalgo -->
     <article class="tarjeta-fecha">
         <img src="miguel.jpg" alt="Miguel Hidalgo" class="imagen-fecha">
         <div class="contenido-texto">
@@ -156,6 +195,8 @@
             justicia social sentaron las bases ideológicas y el impulso inicial del movimiento insurgente.</p>
         </div>
     </article>
+    
+    <!-- Segunda tarjeta con la información de José María Morelos -->
     <article class="tarjeta-fecha">
         <img src="jose.jfif" alt="José María y Morelos" class="imagen-fecha">
         <div class="contenido-texto">
@@ -166,6 +207,8 @@
             división de poderes y la igualdad entre todos los ciudadanos mexicanos.</p>
         </div>
     </article>
+    
+    <!-- Tercera tarjeta con la información de Josefa Ortiz de Domínguez -->
     <article class="tarjeta-fecha">
         <img src="josefa.jpg" alt="Josefa Ortiz de Domínguez" class="imagen-fecha">
         <div class="contenido-texto">
@@ -176,6 +219,8 @@
             se adelantara e iniciara con éxito en lugar de ser desarticulado antes de empezar.</p>
         </div>
     </article>
+    
+    <!-- Cuarta tarjeta con la información de Ignacio Allende -->
     <article class="tarjeta-fecha">
         <img src="ignacio.jfif" alt="Ignacio Allende y Unzaga" class="imagen-fecha">
         <div class="contenido-texto">
@@ -185,7 +230,10 @@
             libertador. Trabajo codo a codo con Miguel Hidalgo durante los primeros meses del conflicto, destacando por su firme convicción de establecer un gobierno
             autónomo que respondiera a los intereses y necesidades del pueblo mexicano.</p>
         </div>
-    </article><article class="tarjeta-fecha">
+    </article>
+    
+    <!-- Quinta tarjeta con la información de Vicente Guerrero -->
+    <article class="tarjeta-fecha">
         <img src="vicente.jpg" alt="Vicente Guerrero" class="imagen-fecha">
         <div class="contenido-texto">
             <h2>Vicente Guerrero</h2>
@@ -194,7 +242,10 @@
             gobierno virreinal. Su pragmatismo y visión política le permitieron pactar el histórico "Abrazo de Acatempan" con Agustín de Iturbide, logrando la unión de
             fuerzas que condujo a la consumación definitiva de la Independencia en 1821.</p>
         </div>
-    </article><article class="tarjeta-fecha">
+    </article>
+    
+    <!-- Sexta tarjeta con la información de Leona Vicario -->
+    <article class="tarjeta-fecha">
         <img src="leona.jfif" alt="Leona Vicario" class="imagen-fecha">
         <div class="contenido-texto">
             <h2>Leona Vicario</h2>
@@ -207,6 +258,7 @@
 </main>
     </div>
 
+    <!-- Pie de página con tus datos de la escuela -->
     <footer>
         <p>Nombre: Ortiz Lugo Aime Alexandra | No. Control: 24308051280608</p>
         <p>Semestre: 4to | Grupo: I | Especialidad: Programación</p>
