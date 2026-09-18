@@ -1,54 +1,75 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Le dice al navegador que la página es HTML5 -->
     <meta charset="UTF-8">
+    <!-- Permite que se vean bien los acentos, la 'ñ' y símbolos sin que se rompa el texto -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> MES PATRIO | SEPTIEMBRE</title>
+    <!-- Trae la fuente "Playfair Display" desde Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <!-- Todo el estilo y diseño CSS de la página de inicio va aquí adentro -->
     <style>
+        /* Quita los márgenes por defecto y le pone la letra Arial a todo el cuerpo */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
         }
+        
+        /* Acomoda el encabezado verde superior con su color beige de fondo */
         header {
             background-color: #FAF0E6;
-            padding: 10 px 20px;
+            padding: 10px 20px; /* Espaciado interno corregido */
             border-bottom: 2px solid #B22222;
             font-family: "Playfair Display", sans-serif;
             font-size: 50px;
 
+            /* Flexbox: junta y acomoda los elementos de adentro en una sola fila */
             display: flex;
+            /* Centra verticalmente la imagen del logo y el texto */
             align-items: center;
-            color:#006400;
-            gap:20px;
+            color: #006400;
+            /* Separa el logo del texto por 20px */
+            gap: 20px;
         }
+        
+        /* Alinea los dos textos del encabezado en la misma línea base */
         .contenedor-texto {
             display: flex;
-            align-items: baseline; /* Pisa las letras sobre la misma línea base horizontal */
-            gap: 25px;            /* Espacio exacto entre ambos textos */
-
+            /* Pisa las letras sobre la misma línea base horizontal */
+            align-items: baseline; 
+            /* Espacio exacto entre ambos textos */
+            gap: 25px; 
         }
 
+        /* Le da el tamaño gigante al texto SEPTIEMBRE */
         .texto-1 {
             font-size: 110px;
             font-weight: bold;
         }
 
+        /* Le da un tamaño secundario a MES PATRIO */
         .texto-2 {
-            font-size: 40px;      /* Puedes cambiar este tamaño */
-
+            font-size: 40px;
         }
 
+        /* Ajusta el ancho de la imagen del logo */
         .logo {
             width: 170px;
             height: auto;
             margin-right: 20px; 
         }
+        
+        /* Junta la barra de menú con el contenido y los pone uno arriba del otro */
         .buscar-barra {
             display: flex; 
-            flex-direction: column; /* Cambiado a columna para mantener el layout */
+            /* Cambiado a columna para mantener el layout vertical */
+            flex-direction: column; 
             gap: 5px;     
         }   
-        /* SECCIÓN MODIFICADA PARA EL DESPLAZAMIENTO HORIZONTAL */
+        
+        /* SECCIÓN MODIFICADA PARA EL DESPLAZAMIENTO HORIZONTAL DEL MENÚ */
         nav {
             width: 100%;                  /* Ocupa todo el ancho */
             background-color: #FAF0E6;
@@ -56,21 +77,28 @@
             overflow-x: auto;             /* Activa la barra de desplazamiento horizontal */
             border-bottom: 2px solid #008000;
         }
+        
+        /* Le da forma, espacio y color rojo a las pestañas del menú */
         nav a {
             display: inline-block;        /* Pone las opciones una al lado de la otra */
-            padding: 15px 30px;           /* Se ajusta el espacio para que desborde y aparezca el scroll */
+            padding: 15px 30px;           /* Se ajusta el espacio para que desborde  */
             text-decoration: none;
             font-family: "Playfair Display", sans-serif; 
             font-weight: 600;
-            color:#B22222;
+            color: #B22222;
         }
+        
+        /* Contenedor principal con fondo suave de pantalla */
         main {
-            background-color:#fffafa;
+            background-color: #fffafa;
             padding: 20px;
+            /* Estira este bloque hacia abajo para que llene el espacio disponible */
             flex: 1; 
         }
+        
+        /* Estilo del pie de página con tus datos de la escuela */
         footer {
-            background-color: #BDC8B8 ;
+            background-color: #BDC8B8;
             color: #3E2723;
             padding: 20px;
             text-align: center;
@@ -78,6 +106,8 @@
             font-family: "Playfair Display", sans-serif; 
             font-weight: 600;
         }
+        
+        /* Título de bienvenida de la página principal */
         h1 {
             color: #800000;
             text-align: left;
@@ -85,12 +115,13 @@
             font-weight: 900;
             font-size: 55px;
         }
-        /* Contenedor que pone el texto y la imagen lado a lado */
+        
+        /* Contenedor que pone el texto de inició y la imagen lado a lado */
         .seccion-intro {
             display: flex;
             align-items: flex-end;
             justify-content: space-between;
-            gap: 20px;                /* Distancia entre el párrafo y la imagen */
+            gap: 20px;                 /* Distancia entre el párrafo y la imagen */
             margin-bottom: 40px;
         }
 
@@ -108,22 +139,25 @@
 
         /* La imagen fija a la derecha */
         .imagen-intro {
-            width: 700px;             /* Ancho de la imagen en la esquina */
-            height: 400px;            /* Altura fija */
-            object-fit: cover;        /* Mantiene la proporción de la foto sin deformarla */
-            flex-shrink: 0;           /* Evita que la imagen se reduzca si el texto es largo */
+            width: 700px;              /* Ancho de la imagen en la esquina */
+            height: 400px;             /* Altura fija */
+            object-fit: cover;         /* Mantiene la proporción de la foto sin deformarla */
+            flex-shrink: 0;            /* Evita que la imagen se reduzca si el texto es largo */
         }
     </style>
 </head>
 <body>
 
+    <!-- Encabezado con el logotipo y títulos principales de la página -->
     <header>
         <img src="encabezado.png" alt="Logo" class="logo">
         <div class="contenedor-texto">
-        <span class="texto-1">SEPTIEMBRE</span>
-        <span class="texto-2">MES PATRIO</span>
-    </div>
+            <span class="texto-1">SEPTIEMBRE</span>
+            <span class="texto-2">MES PATRIO</span>
+        </div>
     </header>
+    
+    <!-- Bloque contenedor para el menú y el contenido de bienvenida -->
     <div class="buscar-barra">
         <!-- MENÚ CON BARRA DE DESPLAZAMIENTO HORIZONTAL -->
         <nav>
@@ -132,17 +166,19 @@
             <a href="datoscuriosos.html">ºDatos Curiosos Y Mitos</a>
         </nav>
 
+        <!-- Bloque principal con la introducción del mes patrio -->
         <main>
             <h1>Historia, orgullo y memoria de la<br>Independencia de México.</h1>
 
-        <div class="seccion-intro">
-            <p>En México, septiembre es reconocido como el Mes Patrio debido a que en este período se concentran los acontecimientos históricos fundamentales para la creación del Estado mexicano. <br>Todo comenzó la madrugada del 16 de septiembre de 1810 con el llamado del cura Miguel Hidalgo y Costilla a levantarse en armas. Tras 11 años de intensa lucha, el proceso culminó el 27 de septiembre de 1821 con la entrada del Ejército Trigarante a la Ciudad de México y la posterior firma del Acta de Independencia el 28 de septiembre. Durante este mes también se rinde honor a la defensa de la soberanía nacional el 13 de septiembre (Niños Héroes) y al natalicio de una de las mentes militares más brillantes de la contienda, José María Morelos, el 30 de septiembre.</p>
-            
-            <img src="banner.jpg" alt="Fiestas Patrias" class="imagen-intro">
-        </div>
+            <div class="seccion-intro">
+                <p>En México, septiembre es reconocido como el Mes Patrio debido a que en este período se concentran los acontecimientos históricos fundamentales para la creación del Estado mexicano. <br>Todo comenzó la madrugada del 16 de septiembre de 1810 con el llamado del cura Miguel Hidalgo y Costilla a levantarse en armas. Tras 11 años de intensa lucha, el proceso culminó el 27 de septiembre de 1821 con la entrada del Ejército Trigarante a la Ciudad de México y la posterior firma del Acta de Independencia el 28 de septiembre. Durante este mes también se rinde honor a la defensa de la soberanía nacional el 13 de septiembre (Niños Héroes) y al natalicio de una de las mentes militares más brillantes de la contienda, José María Morelos, el 30 de septiembre.</p>
+                
+                <img src="banner.jpg" alt="Fiestas Patrias" class="imagen-intro">
+            </div>
         </main>
     </div>
 
+    <!-- Pie de página con la información de la alumna y datos escolares -->
     <footer>
         <p>Nombre: Ortiz Lugo Aime Alexandra | No. Control: 24308051280608</p>
         <p>Semestre: 4to | Grupo: I | Especialidad: Programación</p>
