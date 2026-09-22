@@ -1,97 +1,96 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Le dice al navegador que la página es HTML5 -->
+    
     <meta charset="UTF-8">
-    <!-- Permite que se vean bien los acentos, la 'ñ' y símbolos sin que se rompa el texto -->
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> MES PATRIO | SEPTIEMBRE</title>
-    <!-- Trae la fuente "Playfair Display" desde Google Fonts -->
+    
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     
-    <!-- Todo el estilo y diseño CSS de la página va aquí adentro -->
+    
     <style>
-        /* Quita los márgenes por defecto y le pone la letra Arial a todo el cuerpo */
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
         }
         
-        /* Acomoda el encabezado verde superior con su color beige de fondo */
+    
         header {
             background-color: #FAF0E6;
-            padding: 10px 20px; /* Corregido: sin espacio en "10px" */
+            padding: 10px 20px; 
             border-bottom: 2px solid #B22222;
             font-family: "Playfair Display", serif;
             font-size: 50px;
-            /* Flexbox: junta y acomoda los elementos de adentro en una sola fila */
+        
             display: flex;
-            /* Centra verticalmente la imagen del logo y el texto */
+
             align-items: center;
             color: #006400;
-            /* Separa el logo del texto por 20px */
+            
             gap: 20px;
         }
         
-        /* Alinea el texto del título del encabezado */
+    
         .contenedor-texto {
             display: flex;
-            /* Alinea las letras para que queden parejitas sobre la misma línea */
+            
             align-items: baseline;
             gap: 25px;
         }
 
-        /* Le da el tamaño gigante y las letras negritas al título principal */
+        
         .texto-1 {
             font-size: 110px;
             font-weight: bold;
         }
 
-        /* Ajusta el ancho de la imagen del logo */
+    
         .logo {
             width: 170px;
             height: auto;
             margin-right: 20px; 
         }
         
-        /* Junta la barra de menú con el contenido y los pone uno arriba del otro */
+    
         .buscar-barra {
             display: flex; 
-            /* Acomoda las cosas en forma de columna (de arriba hacia abajo) */
+        
             flex-direction: column;
             gap: 5px;     
         }   
         
-        /* Acomoda la barra de navegación donde están las pestañas */
+        
         nav {
             width: 100%;
             background-color: #FAF0E6;
-            /* Evita que los botones del menú se bajen si la pantalla es chiquita */
             white-space: nowrap;
-            /* Si no caben las pestañas, pone una barrita para deslizar a los lados */
+            /* Hace que si no cabe la pestaña se pueda deslizar a los lados*/
             overflow-x: auto;
             border-bottom: 2px solid #008000;
         }
+    
         
-        /* Le da forma, espacio y color rojo a las letras del menú */
         nav a {
             display: inline-block;
             padding: 15px 30px;
-            text-decoration: none; /* Quita la raya de abajo de los links */
+            text-decoration: none; 
             font-family: "Playfair Display", serif; 
             font-weight: 600;
             color: #B22222;
         }
         
-        /* Pone el fondo blanquecino y el espacio a los lados del contenido principal */
+    
         main {
             background-color: #fffafa;
-            padding: 20px 80px; /* Agregamos el margen general aquí para el contenido */
-            /* Estira este bloque hacia abajo para que llene todo el espacio libre */
+            padding: 20px 80px; 
+            
             flex: 1; 
         }
         
-        /* Le pone diseño al pie de página (el cuadrito verde claro de hasta abajo) */
+    
         footer {
             background-color: #BDC8B8;
             color: #4A2E2B;
@@ -102,7 +101,7 @@
             font-weight: 600;
         }
         
-        /* Pone estilo a los h1 centrándolos y poniéndolos en color guinda */
+        
         h1 {
             color: #800000;
             text-align: center;
@@ -111,8 +110,8 @@
             font-size: 45px;
         }
         
-        /* SECCIÓN DE FECHAS (TARJETAS) */
-        /* Acomoda cada fecha importante repartiendo el texto a un lado y la foto al otro */
+    
+        
         .tarjeta-fecha {
             display: flex;
             align-items: center;
@@ -124,12 +123,12 @@
             border-bottom: 2px solid #800000;
         }
 
-        /* Le da espacio al bloque de texto dentro de cada tarjeta para que tome el espacio libre */
+        /* Le da espacio al texto de cada tarjeta */
         .contenido-texto {
             flex: 1;
         }
 
-        /* Pone estilo a los títulos h2 de cada fecha haciéndolos grandes y verdes */
+        /* Estilo a los títulos h2  */
         .contenido-texto h2 {
             font-weight: bold;
             margin-top: 0;
@@ -141,53 +140,52 @@
             font-size: 37px;
         }
 
-        /* Pone estilo a los párrafos alineando el texto justificado para que se vea parejito */
+        /* estilo de los párrafos , justifica el texto*/
         .contenido-texto p {
             font-family: sans-serif;
             font-size: 16px;
-            /* Separa los renglones un poquito para que sea cómodo de leer */
+            
             line-height: 1.6;
             color: #3E2723;
-            /* Justifica el texto para que quede alineado de ambos lados */
+            
             text-align: justify;
-            margin: 0; /* Se reinician márgenes para alinearse bien con la imagen */
+            margin: 0; 
         }
 
-        /* Ajusta las medidas de las imágenes de las fechas */
+        /* Medidas de las imágenes de las fechas */
         .imagen-fecha {
             width: 300px;
             height: 200px;
-            /* Adapta la imagen para llenar el recuadro sin que se distorsione */
+            /* Hace que la imagen no se distincione*/
             object-fit: cover;
         }
 </style>
 </head>
 <body>
 
-    <!-- Encabezado superior con la foto del logo y el título principal de la sección -->
+
     <header>
         <img src="encabezado.png" alt="Logo" class="logo">
         <div class="contenedor-texto">
         <span class="texto-1">FECHAS IMPORTANTES</span>
     </div>
     </header>
-    
-    <!-- Bloque contenedor para el menú y el contenido de las fechas -->
+
     <div class="buscar-barra">
-        <!-- MENÚ CON BARRA DE DESPLAZAMIENTO HORIZONTAL -->
-        <!-- Barra de navegación con los enlaces hacia las otras páginas -->
+    
+        <!-- Barra de navegación con los enlaces -->
         <nav>
             <a href="index.html">ºInicio</a>
             <a href="personajesilustres.html">ºPersonajes Ilustres</a>
             <a href="datoscuriosos.html">ºDatos Curiosos Y Mitos</a>
         </nav>
 
-        <!-- Bloque contenedor principal de los textos de la página -->
+        
         <main>
-    <!-- Título principal centrado dentro de la página -->
+    <!-- Título principal centrado  -->
     <h1>Fechas Importantes...</h1>
     
-    <!-- Primera tarjeta con la información del 13 de Septiembre -->
+    <!-- Información del 13 de Septiembre (Agrupa todosls elementos en una clase "tarjeta") -->
     <article class="tarjeta-fecha">
         <div class="contenido-texto">
             <h2>13 de Septiembre – Gesta Heroica de los Niños Héroes de Chapultepec (1847)</h2>
@@ -200,7 +198,7 @@
         <img src="13.webp" alt="Niños Heroes" class="imagen-fecha">
     </article>
     
-    <!-- Segunda tarjeta con la información del 15 de Septiembre -->
+    <!-- Información del 15 de Septiembre -->
     <article class="tarjeta-fecha">
         <div class="contenido-texto">
             <h2>15 de Septiembre (Noche) – El Grito de Dolores</h2>
@@ -212,7 +210,7 @@
         <img src="15.jpg" alt="Grito de Dolores" class="imagen-fecha">
     </article>
     
-    <!-- Tercera tarjeta con la información del 16 de Septiembre -->
+    <!-- Información del 16 de Septiembre -->
     <article class="tarjeta-fecha">
         <div class="contenido-texto">
             <h2>16 de Septiembre – Inicio de la Independencia de México (1810)</h2>
@@ -224,7 +222,7 @@
         <img src="16.jpg" alt="Independencia" class="imagen-fecha">
     </article>
     
-    <!-- Cuarta tarjeta con la información del 27 de Septiembre -->
+    <!-- Información del 27 de Septiembre -->
     <article class="tarjeta-fecha">
         <div class="contenido-texto">
             <h2>27 de Septiembre – Consumación de la Independencia (1821)</h2>
@@ -236,7 +234,7 @@
         <img src="27.jpg" alt="Consumación" class="imagen-fecha">
     </article>
     
-    <!-- Quinta tarjeta con la información del 28 de Septiembre -->
+    <!--Información del 28 de Septiembre -->
     <article class="tarjeta-fecha">
         <div class="contenido-texto">
             <h2>28 de Septiembre – Firma del Acta de Independencia</h2>
@@ -248,7 +246,7 @@
         <img src="28.jpg" alt="Acta de Independencia" class="imagen-fecha">
     </article>
     
-    <!-- Sexta tarjeta con la información del 30 de Septiembre -->
+    <!-- Información del 30 de Septiembre -->
     <article class="tarjeta-fecha">
         <div class="contenido-texto">
             <h2>30 de Septiembre – Natalicio de José María Morelos y Pavón</h2>
@@ -262,7 +260,7 @@
 </main>
     </div>
 
-    <!-- Pie de página con tus datos de la escuela -->
+    
     <footer>
         <p>Nombre: Ortiz Lugo Aime Alexandra | No. Control: 24308051280608</p>
         <p>Semestre: 4to | Grupo: I | Especialidad: Programación</p>
