@@ -1,43 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Le dice al navegador que la página es HTML5 -->
+    <!-- Define que la pagina es HTML5 -->
     <meta charset="UTF-8">
-    <!-- Permite que se vean bien los acentos, la 'ñ' y símbolos sin que se rompa el texto -->
+    <!-- Hace que se puedan visualizar los acentos y caracteres especiales-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Se adapta al ancho del dispositivo -->
     <title> MES PATRIO | SEPTIEMBRE</title>
-    <!-- Trae la fuente "Playfair Display" desde Google Fonts -->
+    <!-- Fuente "Playfair Display" desde Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     
-    <!-- Todo el estilo y diseño CSS de la página de inicio va aquí adentro -->
+    <!-- Inicia el css-->
     <style>
-        /* Quita los márgenes por defecto y le pone la letra Arial a todo el cuerpo */
+        /* Pone la letra Arial a todo el cuerpo y quita los margenes */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
         }
         
-        /* Acomoda el encabezado verde superior con su color beige de fondo */
+        /* Ajusta el encabezado verde con beige */
         header {
             background-color: #FAF0E6;
-            padding: 10px 20px; /* Espaciado interno corregido */
+            padding: 10px 20px; /* Espacio de los lados */
             border-bottom: 2px solid #B22222;
             font-family: "Playfair Display", sans-serif;
             font-size: 50px;
 
             /* Flexbox: junta y acomoda los elementos de adentro en una sola fila */
             display: flex;
-            /* Centra verticalmente la imagen del logo y el texto */
+            /* Acomoda en el centro verticalmente la imagen del logo y el texto */
             align-items: center;
             color: #006400;
-            /* Separa el logo del texto por 20px */
+            /* Separa el logo del texto */
             gap: 20px;
         }
         
         /* Alinea los dos textos del encabezado en la misma línea base */
         .contenedor-texto {
             display: flex;
-            /* Pisa las letras sobre la misma línea base horizontal */
+            /* Hace que los 2 textos esten escritos sobre la misma linea  */
             align-items: baseline; 
             /* Espacio exacto entre ambos textos */
             gap: 25px; 
@@ -49,12 +50,12 @@
             font-weight: bold;
         }
 
-        /* Le da un tamaño secundario a MES PATRIO */
+        /* Le da un tamaño mas chico a MES PATRIO */
         .texto-2 {
             font-size: 40px;
         }
 
-        /* Ajusta el ancho de la imagen del logo */
+        /* Ancho de la imagen del logo */
         .logo {
             width: 170px;
             height: auto;
@@ -64,31 +65,31 @@
         /* Junta la barra de menú con el contenido y los pone uno arriba del otro */
         .buscar-barra {
             display: flex; 
-            /* Cambiado a columna para mantener el layout vertical */
+            /* Cambiado a columna */
             flex-direction: column; 
             gap: 5px;     
         }   
         
-        /* SECCIÓN MODIFICADA PARA EL DESPLAZAMIENTO HORIZONTAL DEL MENÚ */
+        /* Modifica el menu para que sea horizontal */
         nav {
             width: 100%;                  /* Ocupa todo el ancho */
             background-color: #FAF0E6;
-            white-space: nowrap;          /* Mantiene los elementos en una sola línea */
+            white-space: nowrap;          /* Pone los elembetos en una sola línea */
             overflow-x: auto;             /* Activa la barra de desplazamiento horizontal */
             border-bottom: 2px solid #008000;
         }
         
-        /* Le da forma, espacio y color rojo a las pestañas del menú */
+        /* Le da forma y color rojo a los links del menú */
         nav a {
             display: inline-block;        /* Pone las opciones una al lado de la otra */
-            padding: 15px 30px;           /* Se ajusta el espacio para que desborde  */
+            padding: 15px 30px;           /* Ajusta el espacio de la barra */
             text-decoration: none;
             font-family: "Playfair Display", sans-serif; 
             font-weight: 600;
             color: #B22222;
         }
         
-        /* Contenedor principal con fondo suave de pantalla */
+        /* Espació principal , es donde ponemos información de bienvenida*/
         main {
             background-color: #fffafa;
             padding: 20px;
@@ -96,7 +97,7 @@
             flex: 1; 
         }
         
-        /* Estilo del pie de página con tus datos de la escuela */
+        /* Estilo del pie de pagina*/
         footer {
             background-color: #BDC8B8;
             color: #3E2723;
@@ -107,7 +108,7 @@
             font-weight: 600;
         }
         
-        /* Título de bienvenida de la página principal */
+        /* Título principal*/
         h1 {
             color: #800000;
             text-align: left;
@@ -125,7 +126,7 @@
             margin-bottom: 40px;
         }
 
-        /* El texto toma el espacio disponible a la izquierda */
+        /* El texto se alinea a la izquierda */
         .seccion-intro p {
             flex: 1;
             text-align: left;
@@ -137,18 +138,18 @@
             align-self: flex-start;
         }
 
-        /* La imagen fija a la derecha */
+        /* La imagen se pone la derecha */
         .imagen-intro {
-            width: 700px;              /* Ancho de la imagen en la esquina */
-            height: 400px;             /* Altura fija */
-            object-fit: cover;         /* Mantiene la proporción de la foto sin deformarla */
+            width: 700px;              
+            height: 400px;             
+            object-fit: cover;         /* Hace que la imagen no se deforme */
             flex-shrink: 0;            /* Evita que la imagen se reduzca si el texto es largo */
         }
     </style>
 </head>
 <body>
 
-    <!-- Encabezado con el logotipo y títulos principales de la página -->
+    <!-- Encabezado de la pagina , contiene el titulo y la imagen -->
     <header>
         <img src="encabezado.png" alt="Logo" class="logo">
         <div class="contenedor-texto">
@@ -157,16 +158,16 @@
         </div>
     </header>
     
-    <!-- Bloque contenedor para el menú y el contenido de bienvenida -->
+    <!-- Menu y bienvenida -->
     <div class="buscar-barra">
-        <!-- MENÚ CON BARRA DE DESPLAZAMIENTO HORIZONTAL -->
+        <!-- Muestra la barra de desplazamiento -->
         <nav>
             <a href="fechasimportantes.html">ºFechas Importantes</a>
             <a href="personajesilustres.html">ºPersonajes Ilustres</a>
             <a href="datoscuriosos.html">ºDatos Curiosos Y Mitos</a>
         </nav>
 
-        <!-- Bloque principal con la introducción del mes patrio -->
+        <!-- Parrafo de bienvenida -->
         <main>
             <h1>Historia, orgullo y memoria de la<br>Independencia de México.</h1>
 
@@ -178,7 +179,6 @@
         </main>
     </div>
 
-    <!-- Pie de página con la información de la alumna y datos escolares -->
     <footer>
         <p>Nombre: Ortiz Lugo Aime Alexandra | No. Control: 24308051280608</p>
         <p>Semestre: 4to | Grupo: I | Especialidad: Programación</p>
