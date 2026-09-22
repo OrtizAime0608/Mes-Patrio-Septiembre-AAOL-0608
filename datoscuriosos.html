@@ -1,97 +1,92 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Define que la página es HTML5 -->
     <meta charset="UTF-8">
-    <!-- Permite que se vean bien los acentos, la 'ñ' y símbolos sin que se rompa el texto -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> MES PATRIO | SEPTIEMBRE</title>
-    <!-- Trae la fuente "Playfair Display" desde Google Fonts -->
+
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     
-    <!-- Todo el estilo y diseño CSS de la página va aquí adentro -->
+    
     <style>
-        /* Quita los márgenes por defecto y le pone la letra Arial a todo el cuerpo */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
         }
         
-        /* Acomoda el encabezado verde superior con su color beige de fondo */
         header {
             background-color: #FAF0E6;
-            padding: 10px 20px; /* Corregido: sin espacio en "10px" */
+            padding: 10px 20px; 
             border-bottom: 2px solid #B22222;
             font-family: "Playfair Display", serif;
             font-size: 50px;
-            /* Flexbox: junta y acomoda los elementos de adentro en una sola fila */
+    
             display: flex;
-            /* Centra verticalmente la imagen del logo y el texto */
+        
             align-items: center;
             color: #006400;
-            /* Separa el logo del texto por 20px */
+        
             gap: 20px;
         }
         
-        /* Alinea el texto del título del encabezado */
+        
         .contenedor-texto {
             display: flex;
-            /* Alinea las letras para que queden parejitas sobre la misma línea */
+        
             align-items: baseline;
             gap: 25px;
         }
-
-        /* Le da el tamaño grande y las letras negritas al título principal */
+        
         .texto-1 {
             font-size: 110px;
             font-weight: bold;
         }
 
-        /* Ajusta el ancho de la imagen del logo */
+        
         .logo {
             width: 170px;
             height: auto;
             margin-right: 20px; 
         }
         
-        /* Junta la barra de menú con el contenido y los pone uno arriba del otro */
+        
         .buscar-barra {
             display: flex; 
-            /* Acomoda las cosas en forma de columna (de arriba hacia abajo) */
+        
             flex-direction: column;
             gap: 5px;     
         }   
         
-        /* Acomoda la barra de navegación donde están las pestañas */
+        
         nav {
             width: 100%;
             background-color: #FAF0E6;
-            /* Evita que los botones del menú se bajen si la pantalla es chiquita */
+        
             white-space: nowrap;
-            /* Si no caben las pestañas, pone una barra para deslizar a los lados */
+            
             overflow-x: auto;
             border-bottom: 2px solid #008000;
         }
         
-        /* Le da forma, espacio y color rojo a las letras del menú */
+        
         nav a {
             display: inline-block;
             padding: 15px 30px;
-            text-decoration: none; /* Quita la raya de abajo de los links */
+            text-decoration: none; 
             font-family: "Playfair Display", serif; 
             font-weight: 600;
             color: #B22222;
         }
         
-        /* Pone el fondo blanquecino y el espacio a los lados del contenido principal */
+        
         main {
             background-color: #fffafa;
-            padding: 20px 80px; /* Agregamos el margen general aquí para el contenido */
-            /* Estira este bloque hacia abajo para que llene todo el espacio libre */
+            padding: 20px 80px; /* Margen para el contenido*/
+            /* Hace que no quede ningun espacio libre */
             flex: 1; 
         }
         
-        /* Le pone diseño al pie de página (el cuadro verde claro de hasta abajo) */
+        /* Diseño del pie de pagina*/
         footer {
             background-color: #BDC8B8;
             color: #4A2E2B;
@@ -102,7 +97,7 @@
             font-weight: 600;
         }
         
-        /* Pone estilo a los h1 centrándolos y poniéndolos en color guinda */
+        /* Centra los h1 y los pone en color guinda */
         h1 {
             color: #800000;
             text-align: center;
@@ -111,12 +106,13 @@
             font-size: 45px;
         }
         
-        /* SECCIÓN DE FECHAS (TARJETAS) */
-        /* Acomoda cada mito como una tarjeta con la foto a la izquierda y texto a la derecha */
+        
+
+        /* Linea el texto a la derecha eh imagen a la izquierda*/
         .tarjeta-fecha {
             display: flex;
             align-items: center;
-            /* Alinea todo el contenido empezando desde la izquierda */
+            /* Muestra ek contenido iniciando a la izquierda */
             justify-content: flex-start;
             gap: 30px;
             margin-bottom: 30px;
@@ -125,12 +121,12 @@
             border-bottom: 2px solid #006400;
         }
 
-        /* Le da espacio al bloque de texto dentro de cada tarjeta para que se expanda */
+        
         .contenido-texto {
             flex: 1;
         }
 
-        /* Pone estilo a los títulos h2 de cada mito */
+        /* Estilo de los h2*/
         .contenido-texto h2 {
             font-weight: bold;
             margin-top: 0;
@@ -142,29 +138,29 @@
             font-size: 45px;
         }
 
-        /* Pone estilo a los párrafos de texto con espacio entre renglones para que se lea fácil */
+        /* Estilo a los párrafos de texto con espacios entre renglones*/
         .contenido-texto p {
             font-family: sans-serif;
             font-size: 25px;
-            /* Separa un poquito los renglones para que no se vean amontonados */
+            /* Separa los renglones*/
             line-height: 1.6;
             color: #3E2723;
             text-align: left;
             margin: 0; /* Se reinician márgenes para alinearse bien con la imagen */
         }
 
-        /* Ajusta las fotos de los mitos para que no se deformen */
+        /* Hace que las imagenes no se deformen */
         .imagen-fecha {
             width: 350px;
             height: 400px;
-            /* Recorta la foto para que llene el cuadro sin estirarse ni aplastarse */
+            /* Acomoda la foto para que no se estire */
             object-fit: cover;
         }
 </style>
 </head>
 <body>
 
-    <!-- Encabezado de la página con la foto del logo y el título principal -->
+    <!-- Encabezado de la página con el titulo y la imagen -->
     <header>
         <img src="encabezado.png" alt="Logo" class="logo">
         <div class="contenedor-texto">
@@ -172,20 +168,20 @@
     </div>
     </header>
     
-    <!-- Bloque que junta el menú de navegación y los mitos -->
+    <!-- Menu de navegación -->
     <div class="buscar-barra">
-        <!-- MENÚ CON BARRA DE DESPLAZAMIENTO HORIZONTAL -->
-        <!-- Menú de navegación con links a las otras páginas -->
+
+        
         <nav>
             <a href="index.html">ºInicio</a>
             <a href="fechasimportantes.html">ºFechas Importantes</a>
             <a href="personajesilustres.html">ºPersonajes Ilustres</a>
         </nav>
 
-        <!-- Bloque contenedor de todo el contenido de la página -->
+        
         <main>
     
-    <!-- Primera tarjeta con la información del Mito 1 -->
+    <!-- Información del Mito 1 (Agrupa los elementos en una clase )-->
     <article class="tarjeta-fecha">
         <img src="mito1.jpg" alt="Mito 1" class="imagen-fecha">
         <div class="contenido-texto">
@@ -202,7 +198,7 @@
         </div>
     </article>
     
-    <!-- Segunda tarjeta con la información del Mito 2 -->
+    <!-- Información del Mito 2 -->
     <article class="tarjeta-fecha">
         <img src="mito2.jfif" alt="Mito 2" class="imagen-fecha">
         <div class="contenido-texto">
@@ -221,7 +217,7 @@
         </div>
     </article>
     
-    <!-- Tercera tarjeta con la información del Dato Curioso 3 -->
+    <!-- Dato Curioso 3 -->
     <article class="tarjeta-fecha">
         <img src="mito3.jfif" alt="Ignacio Allende y Unzaga" class="imagen-fecha">
         <div class="contenido-texto">
@@ -239,7 +235,7 @@
         </div>
     </article>
     
-    <!-- Cuarta tarjeta con la información del Dato Curioso 4 -->
+    <!--  Dato Curioso 4 -->
     <article class="tarjeta-fecha">
         <img src="mito4.jfif" alt="Vicente Guerrero" class="imagen-fecha">
         <div class="contenido-texto">
@@ -258,7 +254,7 @@
 </main>
     </div>
 
-    <!-- Pie de página con tus datos de la escuela -->
+
     <footer>
         <p>Nombre: Ortiz Lugo Aime Alexandra | No. Control: 24308051280608</p>
         <p>Semestre: 4to | Grupo: I | Especialidad: Programación</p>
