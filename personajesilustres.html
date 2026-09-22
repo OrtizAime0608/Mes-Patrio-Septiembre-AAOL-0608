@@ -1,97 +1,95 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Le dice al navegador que la página es HTML5 -->
+    
     <meta charset="UTF-8">
-    <!-- Permite que se vean bien los acentos, la 'ñ' y símbolos sin que se rompa el texto -->
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> MES PATRIO | SEPTIEMBRE</title>
-    <!-- Trae la fuente "Playfair Display" desde Google Fonts -->
+    
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     
-    <!-- Todo el estilo y diseño CSS de la página va aquí adentro -->
+    
     <style>
-        /* Quita los márgenes por defecto y le pone la letra Arial a todo el cuerpo */
+        
         body {
             font-family: Arial, sans-serif;
             margin: 0;
         }
         
-        /* Acomoda el encabezado verde superior con su color beige de fondo */
+    
         header {
             background-color: #FAF0E6;
-            padding: 10px 20px; /* Corregido: sin espacio en "10px" */
+            padding: 10px 20px; 
             border-bottom: 2px solid #B22222;
             font-family: "Playfair Display", serif;
             font-size: 50px;
-            /* Flexbox: junta y acomoda los elementos de adentro en una sola fila */
+            
             display: flex;
-            /* Centra verticalmente la imagen del logo y el texto */
+        
             align-items: center;
             color: #006400;
-            /* Separa el logo del texto por 20px */
+        
             gap: 20px;
         }
         
-        /* Alinea el texto del título del encabezado */
+
         .contenedor-texto {
             display: flex;
-            /* Alinea las letras para que queden parejitas sobre la misma línea */
+            
             align-items: baseline;
             gap: 25px;
         }
 
-        /* Le da el tamaño grande y las letras negritas al título principal */
+        
         .texto-1 {
             font-size: 110px;
             font-weight: bold;
         }
 
-        /* Ajusta el ancho de la imagen del logo */
+
         .logo {
             width: 170px;
             height: auto;
             margin-right: 20px; 
         }
         
-        /* Junta la barra de menú con el contenido y los pone uno arriba del otro */
         .buscar-barra {
             display: flex; 
-            /* Acomoda las cosas en forma de columna (de arriba hacia abajo) */
+            
             flex-direction: column;
             gap: 5px;     
         }   
         
-        /* Acomoda la barra de navegación donde están las pestañas */
+
         nav {
             width: 100%;
             background-color: #FAF0E6;
             /* Evita que los botones del menú se bajen si la pantalla es chiquita */
             white-space: nowrap;
-            /* Si no caben las pestañas, pone una barrita para deslizar a los lados */
             overflow-x: auto;
             border-bottom: 2px solid #008000;
         }
         
-        /* Le da forma, espacio y color rojo a las letras del menú */
+        
         nav a {
             display: inline-block;
             padding: 15px 30px;
-            text-decoration: none; /* Quita la raya de abajo de los links */
+            text-decoration: none;
             font-family: "Playfair Display", serif; 
             font-weight: 600;
             color: #B22222;
         }
         
-        /* Pone el fondo blanquecino y el espacio a los lados del contenido principal */
+        
         main {
             background-color: #fffafa;
-            padding: 20px 80px; /* Agregamos el margen general aquí para el contenido */
-            /* Estira este bloque hacia abajo para que llene todo el espacio libre */
+            padding: 20px 80px; 
+    
             flex: 1; 
         }
         
-        /* Le pone diseño al pie de página (el cuadrito verde claro de hasta abajo) */
+        
         footer {
             background-color: #BDC8B8;
             color: #4A2E2B;
@@ -102,7 +100,7 @@
             font-weight: 600;
         }
         
-        /* Pone estilo a los h1 centrándolos y poniéndolos en color guinda */
+        /* Pone color guinda a los h1*/
         h1 {
             color: #800000;
             text-align: center;
@@ -111,8 +109,8 @@
             font-size: 45px;
         }
         
-        /* SECCIÓN DE FECHAS (TARJETAS) */
-        /* Acomoda cada personaje en su tarjeta alineando la foto y el texto con un espacio de 40px */
+        
+        /* Acomoda el texto y la imagen de cada personaje */
         .tarjeta-fecha {
             display: flex;
             align-items: center;
@@ -124,12 +122,12 @@
             border-bottom: 2px solid #800000;
         }
 
-        /* Le da espacio al bloque de texto dentro de la tarjeta para que se expanda bien */
+        /* Le da espacio al bloque de texto para que se expanda bien */
         .contenido-texto {
             flex: 1;
         }
 
-        /* Pone estilo a los títulos h2 con el nombre de cada personaje patrio */
+        /* Estilo de oos h2(nombre de cada personaje)*/
         .contenido-texto h2 {
             font-weight: bold;
             margin-top: 0;
@@ -141,29 +139,29 @@
             font-size: 37px;
         }
 
-        /* Pone estilo a los párrafos de las biografías */
+        /* Pone estilo a los párrafos de los personajes*/
         .contenido-texto p {
             font-family: sans-serif;
             font-size: 16px;
-            /* Separa los renglones un poquito para que sea cómodo de leer */
+            /* Separa los renglones un poquito */
             line-height: 1.6;
             color: #3E2723;
             text-align: left;
-            margin: 0; /* Se reinician márgenes para alinearse bien con la imagen */
+            margin: 0; 
         }
 
-        /* Ajusta el tamaño de los retratos de los personajes */
+        /* Ajusta el tamaño de las imagenes de los personajes */
         .imagen-fecha {
             width: 350px;
             height: 350px;
-            /* Recorta la foto para que llene el cuadro sin estirarse ni aplastarse */
+            /* recorta ka foto para que no se aplaste*/
             object-fit: cover;
         }
 </style>
 </head>
 <body>
 
-    <!-- Encabezado superior con la foto del logo y el título de Personajes Ilustres -->
+    <!-- Encabezado con titulo principal-->
     <header>
         <img src="encabezado.png" alt="Logo" class="logo">
         <div class="contenedor-texto">
@@ -171,20 +169,20 @@
     </div>
     </header>
     
-    <!-- Bloque contenedor para la navegación y el contenido -->
+    
     <div class="buscar-barra">
-        <!-- MENÚ CON BARRA DE DESPLAZAMIENTO HORIZONTAL -->
-        <!-- Menú de navegación con links a las otras páginas del sitio web -->
+    
+        <!-- Menú de navegación con links -->
         <nav>
             <a href="index.html">ºInicio</a>
             <a href="fechasimportantes.html">ºFechas Importantes</a>
             <a href="datoscuriosos.html">ºDatos Curiosos Y MItos</a>
         </nav>
 
-        <!-- Bloque contenedor principal donde van todos los personajes -->
+        <!-- Contenedor donde van todos los personajes -->
         <main>
     
-    <!-- Primera tarjeta con la información de Miguel Hidalgo -->
+    <!--Información de Miguel Hidalgo (agrupa los elementos en una clase)-->
     <article class="tarjeta-fecha">
         <img src="miguel.jpg" alt="Miguel Hidalgo" class="imagen-fecha">
         <div class="contenido-texto">
@@ -196,7 +194,7 @@
         </div>
     </article>
     
-    <!-- Segunda tarjeta con la información de José María Morelos -->
+    <!-- Información de José María Morelos -->
     <article class="tarjeta-fecha">
         <img src="jose.jfif" alt="José María y Morelos" class="imagen-fecha">
         <div class="contenido-texto">
@@ -208,7 +206,7 @@
         </div>
     </article>
     
-    <!-- Tercera tarjeta con la información de Josefa Ortiz de Domínguez -->
+    <!-- Información de Josefa Ortiz de Domínguez -->
     <article class="tarjeta-fecha">
         <img src="josefa.jpg" alt="Josefa Ortiz de Domínguez" class="imagen-fecha">
         <div class="contenido-texto">
@@ -220,7 +218,7 @@
         </div>
     </article>
     
-    <!-- Cuarta tarjeta con la información de Ignacio Allende -->
+    <!-- Información de Ignacio Allende -->
     <article class="tarjeta-fecha">
         <img src="ignacio.jfif" alt="Ignacio Allende y Unzaga" class="imagen-fecha">
         <div class="contenido-texto">
@@ -232,7 +230,7 @@
         </div>
     </article>
     
-    <!-- Quinta tarjeta con la información de Vicente Guerrero -->
+    <!-- Información de Vicente Guerrero -->
     <article class="tarjeta-fecha">
         <img src="vicente.jpg" alt="Vicente Guerrero" class="imagen-fecha">
         <div class="contenido-texto">
@@ -244,7 +242,7 @@
         </div>
     </article>
     
-    <!-- Sexta tarjeta con la información de Leona Vicario -->
+    <!-- información de Leona Vicario -->
     <article class="tarjeta-fecha">
         <img src="leona.jfif" alt="Leona Vicario" class="imagen-fecha">
         <div class="contenido-texto">
@@ -257,8 +255,8 @@
     </article>
 </main>
     </div>
-
-    <!-- Pie de página con tus datos de la escuela -->
+    <
+        
     <footer>
         <p>Nombre: Ortiz Lugo Aime Alexandra | No. Control: 24308051280608</p>
         <p>Semestre: 4to | Grupo: I | Especialidad: Programación</p>
